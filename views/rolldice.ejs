@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Website</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #2b2b2b; /* Slightly lighter background */
+      color: #ffffff;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1e1e1e; /* Darker header */
+      padding: 15px 0;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      text-align: left;
+      padding: 20px;
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      background-color: #353535; /* Slightly lighter section background */
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 24px;
+      border: none;
+      background-color: #ff4d00;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff6600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Gaming Universe! Your lucky number is <%= diceValue %> </h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Games</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>About Us</h2>
+      <p>We are passionate gamers, dedicated to bringing you the best gaming experience. Our mission is to provide a platform for gamers to connect and enjoy the world of gaming.</p>
+    </section>
+
+    <section class="section">
+      <h2>Featured Game</h2>
+      <img src="https://via.placeholder.com/800" alt="Featured Game">
+      <p>Experience the thrilling world of our featured game. Join us and embark on an exciting gaming adventure.</p>
+      <button>Play Now</button>
+    </section>
+
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>Have any questions or suggestions? Feel free to reach out to us through our contact form or email. We'd love to hear from you!</p>
+      <button>Contact</button>
+    </section>
+  </main>
+</body>
+</html>

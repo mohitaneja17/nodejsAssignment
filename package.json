@@ -1,0 +1,25 @@
+{
+  "name": "express2",
+  "version": "1.0.0",
+  "description": "nodejsAssignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitaneja17/nodejsAssignment.git"
+  },
+  "author": "Mohit Taneja",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mohitaneja17/nodejsAssignment/issues"
+  },
+  "homepage": "https://github.com/mohitaneja17/nodejsAssignment#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3"
+  }
+}
