@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-app-deployment
+spec:
+  replicas: 2  # Set the number of replicas
+  selector:
+    matchLabels:
+      app: nodejs-app
+  template:
+    metadata:
+      labels:
+        app: nodejs-app
+    spec:
+      containers:
+      - name: nodejs-app
+        image: mohittaneja1/assignment:v0.2
+        ports:
+        - containerPort: 3002
+      imagePullSecrets:
+      - name: my-registry-secret1
+      

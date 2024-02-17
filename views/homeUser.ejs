@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Profile for @<%=username%>
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #292b2c;
+            /* Darker background */
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #333333;
+            /* Darker header */
+            border-bottom: 1px solid #555555;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            margin: 0;
+            color: #aaaaaa;
+            /* Lighter text color for info */
+        }
+
+        .follow-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #ff4d00;
+            /* Instagram's orange color */
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .follow-button:hover {
+            background-color: #ff6600;
+        }
+
+        .followers {
+            padding: 20px;
+            background-color: #333333;
+            border-top: 1px solid #555555;
+        }
+
+        .followers h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .followers ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .followers li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-header">
+        <img class="profile-image" src="https://via.placeholder.com/100" alt="Profile Picture">
+        <div class="profile-info">
+            <h1>
+                <%=username.toUpperCase();%>
+            </h1>
+            <p>@<%=username%>
+            </p>
+            <% if (username=="mohit_redefined" ){ %>
+                <p> This is your own profile. This is how it appears to others.</p>
+                <% } else {%>
+                    <button class="follow-button">Follow</button>
+                    <% }%>
+        </div>
+    </div>
+
+    <div class="followers">
+        <h2>Followers</h2>
+        <ul>
+            <li>Follower 1</li>
+            <li>Follower 2</li>
+            <li>Follower 3</li>
+            <!-- Add more followers as needed -->
+        </ul>
+    </div>
+
+    <div class="posts">
+        <div class="post">
+            <img src="https://via.placeholder.com/200" alt="Post 1">
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/200" alt="Post 2">
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/200" alt="Post 3">
+        </div>
+        <!-- Add more posts as needed -->
+    </div>
+</body>
+
+</html>
